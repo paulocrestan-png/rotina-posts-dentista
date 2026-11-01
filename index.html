@@ -51,6 +51,9 @@
   .k-prod{background:var(--gold);color:#8a6a00}
   .k-fer{background:var(--rose-soft);color:var(--rose)}
   .k-rev{background:#e8e8e8;color:#444}
+  .k-pr{background:#1d1b17;color:#fff;text-decoration:none}
+  .k-pr:hover{background:var(--teal)}
+  .k-none{background:transparent;color:var(--mute);border:1px dashed var(--line)}
   .day.prod{background:#fffaf0}
   .day.off{background:#faf8f4}
   .legend{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 14px}
@@ -128,63 +131,63 @@
 </div>
 
 <h2 id="novembro">4. Calendário de novembro de 2026</h2>
-<p class="small">Dia a dia do primeiro mês. Os feriados estão marcados: o post pode ser agendado, só o engajamento tende a cair. Na Black Friday (27) não entra desconto nem promoção, o CFO proíbe.</p>
+<p class="small">Dia a dia do primeiro mês. Os feriados estão marcados: o post pode ser agendado, só o engajamento tende a cair. Na Black Friday (27) não entra desconto nem promoção, o CFO proíbe. A etiqueta preta <b>#N</b> diz qual prompt da seção 6 usar naquele dia; toque nela pra ir direto ao prompt.</p>
 <div class="legend">
-  <span class="k k-post">POST</span><span class="k k-story">STORY</span><span class="k k-prod">PRODUÇÃO</span><span class="k k-rev">REVISÃO</span><span class="k k-fer">FERIADO</span>
+  <span class="k k-post">POST</span><span class="k k-story">STORY</span><span class="k k-prod">PRODUÇÃO</span><span class="k k-rev">REVISÃO</span><span class="k k-fer">FERIADO</span><span class="k k-pr">#N PROMPT</span>
 </div>
 
 <div class="card week">
   <header><b>Semana 0 · Preparação</b><span>Domingo, 1 de novembro</span></header>
-  <div class="day prod"><div class="d">Dom<small>1 nov</small></div><div class="t"><span class="k k-prod">PRODUÇÃO</span>Arrumar a bio: nome, CRO, "Dentística restauradora e estética", cidade e link do WhatsApp. Ler a seção 1 (CFO). Fazer a hora de produção da semana 1 com o tema <b>Vergonha de sorrir</b> (prompts #2, #3, #5, #7). Encomendar o QR code do perfil pra recepção.</div></div>
+  <div class="day prod"><div class="d">Dom<small>1 nov</small></div><div class="t"><span class="k k-prod">PRODUÇÃO</span><a class="k k-pr" href="#p2">#2</a><a class="k k-pr" href="#p3">#3</a><a class="k k-pr" href="#p5">#5</a><a class="k k-pr" href="#p7">#7</a>Arrumar a bio: nome, CRO, "Dentística restauradora e estética", cidade e link do WhatsApp. Ler a seção 1 (CFO). Fazer a hora de produção da semana 1 com o tema <b>Vergonha de sorrir</b>. Encomendar o QR code do perfil pra recepção.</div></div>
 </div>
 
 <div class="card week">
   <header><b>Semana 1 · Vergonha de sorrir</b><span>2 a 8 de novembro</span></header>
-  <div class="day off"><div class="d">Seg<small>2 nov</small></div><div class="t"><span class="k k-fer">FERIADO</span><span class="k k-post">POST</span>Carrossel: <b>5 problemas estéticos que se resolvem sem faceta</b>. Finados: agendar pra 19h.</div></div>
-  <div class="day"><div class="d">Ter<small>3 nov</small></div><div class="t"><span class="k k-story">STORY</span>Enquete: "O que mais te incomoda no sorriso: cor, formato ou espaço entre os dentes?"</div></div>
-  <div class="day"><div class="d">Qua<small>4 nov</small></div><div class="t"><span class="k k-post">POST</span>Reel 30s: <b>"Nem todo sorriso precisa de lente de contato"</b>.</div></div>
-  <div class="day"><div class="d">Qui<small>5 nov</small></div><div class="t"><span class="k k-story">STORY</span>Caixinha de perguntas: "Me pergunta qualquer coisa sobre estética dental". Guardar as perguntas.</div></div>
-  <div class="day"><div class="d">Sex<small>6 nov</small></div><div class="t"><span class="k k-post">POST</span>Post humano: <b>por que ela escolheu dentística estética</b>. Foto dela no consultório.</div></div>
-  <div class="day prod"><div class="d">Sáb<small>7 nov</small></div><div class="t"><span class="k k-prod">PRODUÇÃO</span>Hora de produção da semana 2, tema <b>Clareamento</b>. Usar as perguntas da caixinha de quinta.</div></div>
-  <div class="day"><div class="d">Dom<small>8 nov</small></div><div class="t"><span class="k k-post">POST</span>Reel 7s com o melhor gancho da semana (prompt #6).</div></div>
+  <div class="day off"><div class="d">Seg<small>2 nov</small></div><div class="t"><span class="k k-fer">FERIADO</span><span class="k k-post">POST</span><a class="k k-pr" href="#p5">#5</a><a class="k k-pr" href="#p7">#7</a>Carrossel: <b>5 problemas estéticos que se resolvem sem faceta</b>. Finados: agendar pra 19h.</div></div>
+  <div class="day"><div class="d">Ter<small>3 nov</small></div><div class="t"><span class="k k-story">STORY</span><a class="k k-pr" href="#p2">#2</a>Enquete: "O que mais te incomoda no sorriso: cor, formato ou espaço entre os dentes?"</div></div>
+  <div class="day"><div class="d">Qua<small>4 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p3">#3</a><a class="k k-pr" href="#p7">#7</a>Reel 30s: <b>"Nem todo sorriso precisa de lente de contato"</b>.</div></div>
+  <div class="day"><div class="d">Qui<small>5 nov</small></div><div class="t"><span class="k k-story">STORY</span><span class="k k-none">sem prompt · coletar material</span>Caixinha de perguntas: "Me pergunta qualquer coisa sobre estética dental". Guardar as perguntas.</div></div>
+  <div class="day"><div class="d">Sex<small>6 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p1">#1</a><a class="k k-pr" href="#p7">#7</a>Post humano: <b>por que ela escolheu dentística estética</b>. Foto dela no consultório.</div></div>
+  <div class="day prod"><div class="d">Sáb<small>7 nov</small></div><div class="t"><span class="k k-prod">PRODUÇÃO</span><a class="k k-pr" href="#p2">#2</a><a class="k k-pr" href="#p3">#3</a><a class="k k-pr" href="#p5">#5</a><a class="k k-pr" href="#p7">#7</a>Hora de produção da semana 2, tema <b>Clareamento</b>. Usar as perguntas da caixinha de quinta.</div></div>
+  <div class="day"><div class="d">Dom<small>8 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p6">#6</a>Reel 7s com o melhor gancho da semana.</div></div>
 </div>
 
 <div class="card week">
   <header><b>Semana 2 · Clareamento</b><span>9 a 15 de novembro</span></header>
-  <div class="day"><div class="d">Seg<small>9 nov</small></div><div class="t"><span class="k k-post">POST</span>Carrossel: <b>5 cuidados depois de clarear</b>.</div></div>
-  <div class="day"><div class="d">Ter<small>10 nov</small></div><div class="t"><span class="k k-story">STORY</span>Enquete: "Você já tentou clarear em casa com produto de farmácia?"</div></div>
-  <div class="day"><div class="d">Qua<small>11 nov</small></div><div class="t"><span class="k k-post">POST</span>Reel 30s: <b>"Clareamento de farmácia funciona?"</b></div></div>
-  <div class="day"><div class="d">Qui<small>12 nov</small></div><div class="t"><span class="k k-story">STORY</span>Caixinha: "Dúvidas sobre clareamento e sensibilidade".</div></div>
-  <div class="day"><div class="d">Sex<small>13 nov</small></div><div class="t"><span class="k k-post">POST</span>Bastidor: <b>o que ela avalia antes de indicar clareamento</b> (vídeo curto ou carrossel de fotos).</div></div>
-  <div class="day prod"><div class="d">Sáb<small>14 nov</small></div><div class="t"><span class="k k-prod">PRODUÇÃO</span><span class="k k-rev">REVISÃO</span>Produção da semana 3, tema <b>Restauração</b>. Primeira revisão de 15 dias: anotar seguidores novos, salvamentos e mensagens no direct (seção 9). Pedir autorização por escrito de um paciente pro relato do dia 20.</div></div>
-  <div class="day off"><div class="d">Dom<small>15 nov</small></div><div class="t"><span class="k k-fer">FERIADO</span><span class="k k-post">POST</span>Frase de impacto da semana (prompt #6). Proclamação da República.</div></div>
+  <div class="day"><div class="d">Seg<small>9 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p5">#5</a><a class="k k-pr" href="#p7">#7</a>Carrossel: <b>5 cuidados depois de clarear</b>.</div></div>
+  <div class="day"><div class="d">Ter<small>10 nov</small></div><div class="t"><span class="k k-story">STORY</span><a class="k k-pr" href="#p2">#2</a>Enquete: "Você já tentou clarear em casa com produto de farmácia?"</div></div>
+  <div class="day"><div class="d">Qua<small>11 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p3">#3</a><a class="k k-pr" href="#p7">#7</a>Reel 30s: <b>"Clareamento de farmácia funciona?"</b></div></div>
+  <div class="day"><div class="d">Qui<small>12 nov</small></div><div class="t"><span class="k k-story">STORY</span><span class="k k-none">sem prompt · coletar material</span>Caixinha: "Dúvidas sobre clareamento e sensibilidade".</div></div>
+  <div class="day"><div class="d">Sex<small>13 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p1">#1</a><a class="k k-pr" href="#p7">#7</a>Bastidor: <b>o que ela avalia antes de indicar clareamento</b> (vídeo curto ou carrossel de fotos).</div></div>
+  <div class="day prod"><div class="d">Sáb<small>14 nov</small></div><div class="t"><span class="k k-prod">PRODUÇÃO</span><span class="k k-rev">REVISÃO</span><a class="k k-pr" href="#p2">#2</a><a class="k k-pr" href="#p3">#3</a><a class="k k-pr" href="#p4">#4</a><a class="k k-pr" href="#p5">#5</a><a class="k k-pr" href="#p7">#7</a>Produção da semana 3, tema <b>Restauração</b>. Primeira revisão de 15 dias: anotar seguidores novos, salvamentos e mensagens no direct (seção 9). Pedir autorização por escrito de um paciente pro relato do dia 20.</div></div>
+  <div class="day off"><div class="d">Dom<small>15 nov</small></div><div class="t"><span class="k k-fer">FERIADO</span><span class="k k-post">POST</span><a class="k k-pr" href="#p6">#6</a>Frase de impacto da semana. Proclamação da República.</div></div>
 </div>
 
 <div class="card week">
   <header><b>Semana 3 · Restauração</b><span>16 a 22 de novembro</span></header>
-  <div class="day"><div class="d">Seg<small>16 nov</small></div><div class="t"><span class="k k-post">POST</span>Carrossel: <b>5 sinais de que a restauração precisa ser trocada</b>.</div></div>
-  <div class="day"><div class="d">Ter<small>17 nov</small></div><div class="t"><span class="k k-story">STORY</span>Enquete: "Sua restauração tem mais de 5 anos?"</div></div>
-  <div class="day"><div class="d">Qua<small>18 nov</small></div><div class="t"><span class="k k-post">POST</span>Reel 30s: <b>"Por que a resina escureceu?"</b></div></div>
-  <div class="day"><div class="d">Qui<small>19 nov</small></div><div class="t"><span class="k k-story">STORY</span>Caixinha: "Dente lascou ou quebrou? Me conta o que aconteceu".</div></div>
-  <div class="day off"><div class="d">Sex<small>20 nov</small></div><div class="t"><span class="k k-fer">FERIADO</span><span class="k k-post">POST</span>Relato de paciente <b>com autorização por escrito</b> (prompt #4). Consciência Negra: agendar pra 19h.</div></div>
-  <div class="day prod"><div class="d">Sáb<small>21 nov</small></div><div class="t"><span class="k k-prod">PRODUÇÃO</span>Produção da semana 4, tema <b>Facetas e lentes de contato</b>.</div></div>
-  <div class="day"><div class="d">Dom<small>22 nov</small></div><div class="t"><span class="k k-post">POST</span>Carrossel reduzido com o melhor conteúdo da semana (prompt #6).</div></div>
+  <div class="day"><div class="d">Seg<small>16 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p5">#5</a><a class="k k-pr" href="#p7">#7</a>Carrossel: <b>5 sinais de que a restauração precisa ser trocada</b>.</div></div>
+  <div class="day"><div class="d">Ter<small>17 nov</small></div><div class="t"><span class="k k-story">STORY</span><a class="k k-pr" href="#p2">#2</a>Enquete: "Sua restauração tem mais de 5 anos?"</div></div>
+  <div class="day"><div class="d">Qua<small>18 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p3">#3</a><a class="k k-pr" href="#p7">#7</a>Reel 30s: <b>"Por que a resina escureceu?"</b></div></div>
+  <div class="day"><div class="d">Qui<small>19 nov</small></div><div class="t"><span class="k k-story">STORY</span><span class="k k-none">sem prompt · coletar material</span>Caixinha: "Dente lascou ou quebrou? Me conta o que aconteceu".</div></div>
+  <div class="day off"><div class="d">Sex<small>20 nov</small></div><div class="t"><span class="k k-fer">FERIADO</span><span class="k k-post">POST</span><a class="k k-pr" href="#p4">#4</a><a class="k k-pr" href="#p7">#7</a>Relato de paciente <b>com autorização por escrito</b>. Consciência Negra: agendar pra 19h.</div></div>
+  <div class="day prod"><div class="d">Sáb<small>21 nov</small></div><div class="t"><span class="k k-prod">PRODUÇÃO</span><a class="k k-pr" href="#p2">#2</a><a class="k k-pr" href="#p3">#3</a><a class="k k-pr" href="#p5">#5</a><a class="k k-pr" href="#p7">#7</a>Produção da semana 4, tema <b>Facetas e lentes de contato</b>.</div></div>
+  <div class="day"><div class="d">Dom<small>22 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p6">#6</a>Carrossel reduzido com o melhor conteúdo da semana.</div></div>
 </div>
 
 <div class="card week">
   <header><b>Semana 4 · Facetas e lentes de contato</b><span>23 a 29 de novembro</span></header>
-  <div class="day"><div class="d">Seg<small>23 nov</small></div><div class="t"><span class="k k-post">POST</span>Carrossel: <b>5 diferenças entre faceta de resina e de porcelana</b>.</div></div>
-  <div class="day"><div class="d">Ter<small>24 nov</small></div><div class="t"><span class="k k-story">STORY</span>Enquete: "Você acha que faceta estraga o dente?"</div></div>
-  <div class="day"><div class="d">Qua<small>25 nov</small></div><div class="t"><span class="k k-post">POST</span>Reel 30s: <b>"Faceta estraga o dente?"</b></div></div>
-  <div class="day"><div class="d">Qui<small>26 nov</small></div><div class="t"><span class="k k-story">STORY</span>Caixinha: "Qual tema você quer em dezembro?" As respostas definem o próximo mês.</div></div>
-  <div class="day"><div class="d">Sex<small>27 nov</small></div><div class="t"><span class="k k-post">POST</span>Equipe e consultório: <b>quem cuida de você aqui</b>. Black Friday: nada de desconto ou promoção.</div></div>
-  <div class="day prod"><div class="d">Sáb<small>28 nov</small></div><div class="t"><span class="k k-prod">PRODUÇÃO</span><span class="k k-rev">REVISÃO</span>Segunda revisão de 15 dias. Produção da primeira semana de dezembro com o tema mais pedido na caixinha de quinta.</div></div>
-  <div class="day"><div class="d">Dom<small>29 nov</small></div><div class="t"><span class="k k-post">POST</span>Melhor reel do mês em 7s (prompt #6).</div></div>
+  <div class="day"><div class="d">Seg<small>23 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p5">#5</a><a class="k k-pr" href="#p7">#7</a>Carrossel: <b>5 diferenças entre faceta de resina e de porcelana</b>.</div></div>
+  <div class="day"><div class="d">Ter<small>24 nov</small></div><div class="t"><span class="k k-story">STORY</span><a class="k k-pr" href="#p2">#2</a>Enquete: "Você acha que faceta estraga o dente?"</div></div>
+  <div class="day"><div class="d">Qua<small>25 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p3">#3</a><a class="k k-pr" href="#p7">#7</a>Reel 30s: <b>"Faceta estraga o dente?"</b></div></div>
+  <div class="day"><div class="d">Qui<small>26 nov</small></div><div class="t"><span class="k k-story">STORY</span><span class="k k-none">sem prompt · coletar material</span>Caixinha: "Qual tema você quer em dezembro?" As respostas definem o próximo mês.</div></div>
+  <div class="day"><div class="d">Sex<small>27 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p1">#1</a><a class="k k-pr" href="#p7">#7</a>Equipe e consultório: <b>quem cuida de você aqui</b>. Black Friday: nada de desconto ou promoção.</div></div>
+  <div class="day prod"><div class="d">Sáb<small>28 nov</small></div><div class="t"><span class="k k-prod">PRODUÇÃO</span><span class="k k-rev">REVISÃO</span><a class="k k-pr" href="#p2">#2</a><a class="k k-pr" href="#p3">#3</a><a class="k k-pr" href="#p5">#5</a><a class="k k-pr" href="#p7">#7</a>Segunda revisão de 15 dias. Produção da primeira semana de dezembro com o tema mais pedido na caixinha de quinta.</div></div>
+  <div class="day"><div class="d">Dom<small>29 nov</small></div><div class="t"><span class="k k-post">POST</span><a class="k k-pr" href="#p6">#6</a>Melhor reel do mês em 7s.</div></div>
 </div>
 
 <div class="card week">
   <header><b>Fechamento do mês</b><span>Segunda, 30 de novembro</span></header>
-  <div class="day"><div class="d">Seg<small>30 nov</small></div><div class="t"><span class="k k-rev">REVISÃO</span><span class="k k-post">POST</span>Carrossel da semana com o tema escolhido pra dezembro. Olhar o mês inteiro nos Insights: qual pilar trouxe mais seguidor e mais mensagem? Dobrar nele em dezembro.</div></div>
+  <div class="day"><div class="d">Seg<small>30 nov</small></div><div class="t"><span class="k k-rev">REVISÃO</span><span class="k k-post">POST</span><a class="k k-pr" href="#p5">#5</a><a class="k k-pr" href="#p7">#7</a>Carrossel da semana com o tema escolhido pra dezembro. Olhar o mês inteiro nos Insights: qual pilar trouxe mais seguidor e mais mensagem? Dobrar nele em dezembro.</div></div>
 </div>
 
 <h2 id="fluxo">5. Fluxo de uma hora por semana</h2>
@@ -199,37 +202,37 @@
 <h2 id="prompts">6. Os sete prompts prontos</h2>
 <p class="small">Toque em <b>Copiar</b>, cole na IA (ChatGPT, Gemini ou Claude, a versão gratuita serve), troque o que está <mark>destacado</mark>. Um prompt por vez.</p>
 
-<h3><span class="tag">#1</span>Conteúdo com potencial de compartilhamento</h3>
+<h3 id="p1"><span class="tag">#1</span>Conteúdo com potencial de compartilhamento</h3>
 <div class="prompt">Aja como estrategista de redes sociais para uma dentista especialista em dentística restauradora e estética em <mark>[Maringá-PR]</mark>, que fala com pacientes, não com outros dentistas. Analise estas referências de perfis de odontologia estética: <mark>[cole 3 a 5 legendas ou roteiros que ela gosta]</mark>. Identifique padrões de gancho, formato e tom e crie 5 ideias curtas com potencial de compartilhamento sobre <mark>[tema]</mark>. Não invente tendências. Respeite as regras do CFO: sem promessa de resultado, sem preço, sem desconto.<button class="copy">Copiar</button></div>
 
-<h3><span class="tag">#2</span>Transforme dor em gancho</h3>
+<h3 id="p2"><span class="tag">#2</span>Transforme dor em gancho</h3>
 <div class="prompt">Liste 10 dificuldades que <mark>[adultos de 25 a 45 anos]</mark> enfrentam sobre <mark>[tema: ex. vergonha de sorrir / dente lascado / restauração escurecida / faceta / clareamento]</mark>. Trate cada uma como hipótese a validar. Transforme cada uma em um gancho de até 10 palavras para reel ou carrossel. Evite clichês como "sorriso dos sonhos". Seja direta e provocativa, sem prometer resultado.<button class="copy">Copiar</button></div>
 
-<h3><span class="tag">#3</span>Roteiro de Reels de 30 segundos</h3>
+<h3 id="p3"><span class="tag">#3</span>Roteiro de Reels de 30 segundos</h3>
 <div class="prompt">Crie um roteiro de reel de 30 segundos sobre <mark>[tema]</mark>: gancho nos 2 primeiros segundos, explicação curta na voz da dentista e convite para comentar ou salvar. Frases simples, sem jargão técnico. Baseie-se neste relato real: <mark>[cole o que aconteceu, ex. "paciente queria faceta em todos os dentes e resolvi com clareamento e duas restaurações"]</mark>. Não invente experiências. Sem promessa de resultado.<button class="copy">Copiar</button></div>
 
-<h3><span class="tag">#4</span>Posts com prova social</h3>
+<h3 id="p4"><span class="tag">#4</span>Posts com prova social</h3>
 <div class="prompt">Use este resultado real, com autorização por escrito do paciente: <mark>[cole o relato ou depoimento]</mark>. Crie 5 frases de até 10 palavras para texto na tela de um vídeo. Desperte curiosidade sem exagerar e sem apresentar o resultado como garantia. Cada frase deve falar com um paciente que tem a mesma dúvida ou vergonha.<button class="copy">Copiar</button></div>
 
-<h3><span class="tag">#5</span>Conteúdo para salvar</h3>
+<h3 id="p5"><span class="tag">#5</span>Conteúdo para salvar</h3>
 <div class="prompt">Liste 5 dicas práticas sobre <mark>[tema: ex. cuidados após clareamento / como não manchar restauração / o que fazer quando o dente lasca]</mark>, com até 12 palavras cada. Organize em um carrossel de 5 slides, uma dica por slide, com um título curto por slide e uma capa com gancho. Seja clara e dê exemplos quando necessário. No último slide, convide a salvar o post.<button class="copy">Copiar</button></div>
 
-<h3><span class="tag">#6</span>Reaproveite conteúdo</h3>
+<h3 id="p6"><span class="tag">#6</span>Reaproveite conteúdo</h3>
 <div class="prompt">Transforme este texto <mark>[cole a legenda ou o roteiro que mais engajou na semana]</mark> em: um reel de 7 segundos (texto na tela + uma frase falada), um carrossel de 5 slides e um post estático com uma frase de impacto. Adapte a linguagem e o gancho de cada formato. Mantenha as regras do CFO: sem promessa, sem preço.<button class="copy">Copiar</button></div>
 
-<h3><span class="tag">#7</span>Chamadas para ação</h3>
+<h3 id="p7"><span class="tag">#7</span>Chamadas para ação</h3>
 <div class="prompt">Crie 10 chamadas para ação curtas para posts de uma dentista estética sobre <mark>[tema]</mark>, incentivando comentário, salvamento ou mensagem no direct. Conecte cada chamada ao conteúdo. Quando houver convite para consulta, use "agende sua avaliação pelo link da bio", sem preço, sem urgência inventada e sem promessa de resultado.<button class="copy">Copiar</button></div>
 
 <h2 id="calendario">7. Calendário-base de 4 semanas (pra repetir nos próximos meses)</h2>
 <div class="card tw">
 <table>
-<tr><th>Sem.</th><th>Tema</th><th>Seg · carrossel</th><th>Qua · reel</th><th>Sex · prova / humano</th><th>Dom · reaproveitar</th></tr>
+<tr><th>Sem.</th><th>Tema</th><th>Seg · carrossel <span class="k k-pr">#5</span><span class="k k-pr">#7</span></th><th>Qua · reel <span class="k k-pr">#3</span><span class="k k-pr">#7</span></th><th>Sex · prova / humano <span class="k k-pr">#4</span> ou <span class="k k-pr">#1</span></th><th>Dom · reaproveitar <span class="k k-pr">#6</span></th></tr>
 <tr><td>1</td><td>Vergonha de sorrir</td><td>5 problemas estéticos que se resolvem sem faceta</td><td>"Nem todo sorriso precisa de lente de contato"</td><td>Por que ela escolheu estética</td><td>Melhor gancho da semana em 7s</td></tr>
 <tr><td>2</td><td>Clareamento</td><td>5 cuidados após clarear</td><td>"Clareamento de farmácia funciona?"</td><td>Bastidor: como ela avalia antes de indicar</td><td>Frase de impacto</td></tr>
 <tr><td>3</td><td>Restauração</td><td>5 sinais de que a restauração precisa ser trocada</td><td>"Por que a resina escureceu?"</td><td>Relato de paciente autorizado</td><td>Carrossel reduzido</td></tr>
 <tr><td>4</td><td>Facetas e lentes</td><td>5 diferenças entre faceta de resina e porcelana</td><td>"Faceta estraga o dente?"</td><td>Equipe e consultório</td><td>Melhor reel em 7s</td></tr>
 </table>
-<p class="small">Depois da semana 4: repetir os temas que a enquete de terça e a caixinha de quinta mostrarem que o público quer.</p>
+<p class="small">Depois da semana 4: repetir os temas que a enquete de terça e a caixinha de quinta mostrarem que o público quer. Terça (enquete) usa o #2; quinta (caixinha) não usa prompt, só coleta material; sábado roda #2, #3, #5 e #7 (mais o #4 quando houver relato autorizado).</p>
 </div>
 
 <h2 id="seguidores">8. De onde vem o primeiro seguidor</h2>
